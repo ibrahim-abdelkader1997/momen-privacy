@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق مؤمن صلاة - Momen Salah</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-green: #34d399;
+            --accent-cyan: #22d3ee;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: rgba(52, 211, 153, 0.2);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            padding: 20px;
+            background-image: radial-gradient(circle at 10% 20%, rgba(34, 211, 238, 0.05) 0%, transparent 40%),
+                              radial-gradient(circle at 90% 80%, rgba(52, 211, 153, 0.05) 0%, transparent 40%);
+            min-height: 100vh;
+        }
+        .wrapper {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 28px;
+            color: var(--accent-green);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 20px;
+            color: var(--accent-cyan);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 6px;
+        }
+        p, li {
+            color: #cbd5e1;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-right: 20px;
+        }
+        .badge-offline {
+            display: inline-block;
+            background: rgba(52, 211, 153, 0.1);
+            color: var(--accent-green);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border: 1px solid var(--accent-green);
+        }
+        .support-box {
+            background: rgba(15, 23, 42, 0.6);
+            border-right: 4px solid var(--accent-green);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 40px;
+        }
+        .lang-section {
+            margin-top: 40px;
+            border-top: 1px dashed rgba(255,255,255,0.1);
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- قسم حول التطبيق وسياسة الخصوصية بالعربية -->
+        <div class="card">
+            <h1>تطبيق مؤمن صلاة (Momen Salah)</h1>
+            <div class="subtitle">المطور: إبراهيم عبد القادر | الإصدار: 1.0.0</div>
+            
+            <div style="text-align: center;">
+                <span class="badge-offline">✔ يعمل بدون إنترنت بالكامل (Fully Offline)</span>
+            </div>
+
+            <h2>حول التطبيق</h2>
+            <p>تطبيق إسلامي خدمي مصمم خصيصاً لمساعدة المسلم في أداء عباداته اليومية بكل سهولة واطمئنان. التطبيق مجاني بالكامل وبدون إعلانات نهائياً.</p>
+
+            <h2>سياسة الخصوصية والأمان</h2>
+            <ul>
+                <li><strong>عدم جمع البيانات:</strong> لا يجمع التطبيق أو يشارك أي بيانات شخصية للمستخدمين.</li>
+                <li><strong>بدون صلاحيات إنترنت:</strong> التطبيق لا يطلب إذن الإنترنت، لذا يستحيل رفع أي بيانات خارج هاتفك.</li>
+                <li><strong>الخصوصية المحلية:</strong> حسابات المواقيت، القبلة، والإعدادات تُعالج وتُحفظ محلياً على جهازك فقط.</li>
+                <li><strong>بدون إعلانات أو تتبع:</strong> لا يوجد أي طرف ثالث يراقب نشاطك داخل التطبيق.</li>
+            </ul>
+
+            <h2>الدعم والتواصل الاختياري</h2>
+            <p>التطبيق مجاني وسيظل كذلك. إذا وجدت التطبيق نافعاً وترغب في دعم استمراره وتطويره، يمكنك المساهمة اختيارياً عبر:</p>
+            <div class="support-box">
+                <p><strong>اتصالات كاش (Etisalat Cash):</strong> 01155970114</p>
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 0;">الدعم اختيارى تماماً، وشكراً لاستخدامك التطبيق.</p>
+            </div>
+        </div>
+
+        <!-- قسم بالإنجليزية لتسهيل القبول على المتاجر العالمية -->
+        <div class="card lang-section" dir="ltr" style="text-align: left;">
+            <h1 style="color: var(--accent-cyan);">Momen Salah App</h1>
+            <div class="subtitle" style="text-align: left;">Developer: Ibrahimbadelkader | Version: 1.0.0</div>
+            
+            <h2 style="color: var(--accent-green);">About the App</h2>
+            <p>Momen Salah is a clean, offline-first Islamic utility app designed to assist with daily prayers, Qibla direction, and supplications. Completely free with zero ads.</p>
+
+            <h2 style="color: var(--accent-green);">Privacy Policy</h2>
+            <ul>
+                <li><strong>No Data Collection:</strong> We do not collect or share any personal user data.</li>
+                <li><strong>Offline Architecture:</strong> The app has no internet permissions; all data stays strictly on your device.</li>
+                <li><strong>No Trackers or Ads:</strong> Zero third-party trackers or advertisements.</li>
+            </ul>
+
+            <h2 style="color: var(--accent-green);">Optional Support</h2>
+            <p>If you find this app useful and wish to support its ongoing development, voluntary contributions can be made via Etisalat Cash (Egypt): <strong>01155970114</strong>.</p>
+        </div>
+
+        <div class="footer">
+            <p>Developed by إبراهيم عبد القادر © 2026 - جميع الحقوق محفوظة</p>
+        </div>
+    </div>
+
+</body>
+</html>
